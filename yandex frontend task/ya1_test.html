@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Yandex Task 1</title>
+<script src="ya1.js"></script>
+</head>
+<body>
+<div id="output">...</div>
+<script>
+var test_input = `
+Gerona Airport,Stockholm,1,SK455,45B,3A,344
+Madrid,Barcelona,3,,78A,45B
+Stockholm,New York JFK,1,SK22,22,7B,
+Barcelona,Gerona Airport,2,,airport bus,
+`;
+
+var info = get_readable_info(test_input);
+info = info.replaceAll("\n", "<br>");
+document.getElementById("output").innerHTML = info;
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
