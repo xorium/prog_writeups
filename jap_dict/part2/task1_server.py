@@ -99,7 +99,7 @@ def main(path, port):
     if num_of_words <= 0:
         return
     
-    #цикл обработки num_of_words строк
+    #цикл обработки num_of_words строк (num_of_words не исопльзуется)
     for line in data[1:]:
         line = clear_line(line)
         handle_line(line)
