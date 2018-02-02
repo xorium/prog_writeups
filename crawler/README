@@ -1,0 +1,10 @@
+Backend engineer
+Реализовать crawler, который собирает ежесекундные данные пяти любых финансовых крипто-активов с одной биржи и сохраняет их в файл (отдельный файл на каждый актив). Можно использовать API любой биржи (примеры: Binance, Poloniex, Bittrex, Kraken) и любые 5 пар к доллару (примеры: BTC/USDT, ETH/USDT, XRP/USDT). Минимальная необходимая информация для сохранения - last price (цена актива в данный момент времени), timestamp и стакан заявок.
+
+Прочие требования:
+Краулер должен работать асинхронно. Обновления для каждой пары должны собираться в отдельных потоках.
+Обработка ошибок от биржи (rate limits и т.д.) и сети.
+
+Документация на вебсокеты:
+Binance: https://github.com/binance-exchange/binance-official-api-docs/blob/master/web-socket-streams.md.
+Bitfinex: https://docs.bitfinex.com/docs/ws-general.
